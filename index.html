@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            http-equiv="X-UA-Compatible"
-            content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <title>I am 👀 you</title>
-        <link
-            rel="stylesheet"
-            href="index.css" />
-        <script
-            src="index.js"
-            defer></script>
-    </head>
-    <body>
-        <main>
-            <img
-                id="anchor"
-                src="rick-and-morty.png" />
-            <div id="eyes">
-                <img
-                    class="eye"
-                    src="eye.png"
-                    style="bottom: 110px; left: 105px" />
-                <img
-                    class="eye"
-                    src="eye.png"
-                    style="bottom: 115px; left: 250px" />
-                <img
-                    class="eye"
-                    src="eye.png"
-                    style="bottom: -205px; left: -220px" />
-                <img
-                    class="eye"
-                    src="eye.png"
-                    style="bottom: -180px; left: -80px" />
-            </div>
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Look Morty</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        position: relative;
+      }
+      #eyes,
+      #eyes img {
+        position: absolute;
+      }
+      .eye-morty{
+        width:60px
+      }
+      .eye-rick{
+        width:70px
+      }
+    </style>
+    <script src="./assets/app.js"></script>
+  </head>
+  <body>
+    <main>
+      <img id="anchor" src="./assets/look-morty.png" />
+      <div id="eyes">
+        <img class="eye eye-morty" src="./assets/eyeball.png"style="top: 61px; bottom: 0px; left: -130px"/>
+        <img class="eye eye-morty" src="./assets/eyeball.png" style="top: 46px; left: -52px;"  />
+        <img class="eye eye-rick" src="./assets/eyeball.png" style="top: -100px;left: 34px" />
+        <img class="eye eye-rick" src="./assets/eyeball.png" style="top: -105px;left: 99px" />
+      </div>
+    </main>
+  </body>
 </html>
